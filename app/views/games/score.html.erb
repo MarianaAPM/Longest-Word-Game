@@ -1,0 +1,11 @@
+<h1>Result</h1>
+<div class='container'>
+  <p>Given Letters</p>
+  <div class='letter-score'>
+    <% @letters.each do |letter| %>
+      <h4><%= letter.upcase %></h4>
+    <% end %>
+  </div>
+<%= @results %><br><br>
+<%= link_to "Play again", "/new" %>
+</div>
